@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ebebeb;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: #6b6b6b;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitenav {
+  padding: 2.5rem 0;
+}
+.sitenav__list {
+  display: flex;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.sitenav__link {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.hero {
+  padding: 6.7rem 0 7.4rem 0;
+  background-color: #ebebeb;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__wrapper {
+  width: 100%;
+  max-width: 576px;
+  align-items: center;
+}
+.hero__wrapper__title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 3.9rem;
+  line-height: 1.5;
+}
+.hero__wrapper__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: 1.8rem;
+  line-height: 1.4;
+  padding-bottom: 3rem;
+}
+.hero__wrapper__link {
+  background-color: #fff;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.hero__wrapper2 {
+  width: 100%;
+  max-width: 576px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 128px;
+  padding-left: 128px;
+  text-align: center;
+}
+.hero__wrapper2__desc {
+  padding-top: 2.3rem;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  padding: 5.2rem 15.4rem;
+  background-color: #D3D3D3;
+}
+.image__container {
+  align-items: center;
+}
+.image__list {
+  display: flex;
+  align-items: center;
+}
+.image__item:not(:last-child) {
+  margin-right: 6.7rem;
+}
+
+.servis {
+  background-color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 7.6rem;
+}
+.servis__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servis__wrapper__title {
+  align-items: center;
+  width: 576px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 3.6rem;
+  color: #000000;
+  padding-bottom: 1.4rem;
+}
+.servis__wrapper__desc {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.servis__wrapper2 {
+  width: 576px;
+  padding: 0 16.8rem 5.1rem;
+}
+.servis__wrapper2__desc {
+  padding-top: 2rem;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  color: #777777;
+}
+
+.flex__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servis__wrapper3 {
+  width: 576px;
+  padding: 1.5rem 13.6rem 2.6rem;
+}
+.servis__wrapper3__img {
+  margin-left: 2.6rem;
+}
+.servis__wrapper3__desc {
+  width: 324px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #777777;
+  padding-top: 2rem;
+}
+
+.servis__wrapper4__title {
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 36px;
+  padding-bottom: 1.4rem;
+}
+.servis__wrapper4__desc {
+  width: 520px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.layout {
+  background-color: #ebebeb;
+  padding: 8.9rem 14.4rem 8rem;
+}
+.layout__container {
+  align-items: center;
+  justify-content: center;
+}
+
+.layout__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.layout__wrapper__title {
+  padding-bottom: 1.1rem;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 36px;
+  color: #333333;
+}
+.layout__wrapper__desc {
+  padding-bottom: 4rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  outline-color: #333333;
+}
+.layout__wrapper__text {
+  padding-top: 2rem;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  color: #777777;
+}
+.layout__wrapper__text2 {
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  color: #777777;
+}
+
+.step__list {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.step__item:not(:last-child) {
+  margin-right: 3rem;
+}
+.step__item {
+  width: 364px;
+  padding: 3rem 6.9rem;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.step__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 3.1rem;
+}
+.step__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.step__img {
+  padding-bottom: 4rem;
+}
+.step__color {
+  border-radius: 2px;
+  background-color: #3b79c3;
+  color: #fff;
+}
+
+.tips {
+  padding: 9.9rem 8.9rem;
+  background-color: #fff;
+}
+.tips__container {
+  align-items: center;
+  justify-content: center;
+}
+.tips__list {
+  display: flex;
+}
+.tips__item:not(:last-child) {
+  margin-right: 5.6rem;
+}
+.tips__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  padding-bottom: 4.1rem;
+}
+.tips__heading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 3rem;
+  padding-bottom: 1.3rem;
+}
+.tips__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #6b6b6b;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__sitenav__list {
+  display: flex;
+}
+.footer__sitenav__item:not(:last-child) {
+  margin-right: 5rem;
+}
+.footer__sitenav__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.footer__black {
+  background-color: #111111;
+}
+.footer__black__desc {
+  padding: 1.5rem 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777777;
+}/*# sourceMappingURL=main.css.map */

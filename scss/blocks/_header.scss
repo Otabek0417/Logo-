@@ -1,0 +1,25 @@
+.header {
+  background-color: $header-footer-bg;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sitenav {
+  padding: 2.5rem 0;
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 4rem;
+  }
+  &__link {
+    font: {
+      family: $main-font-family;
+      size: 1.3rem;
+    }
+    color: $white-color;
+    line-height: 2rem;
+  }
+}
