@@ -135,6 +135,12 @@
     line-height: 2.4rem;
   }
 }
+.servis__color {
+  border-radius: 5px;
+  padding: 2px 7px;
+  background-color: #3b79c3;
+  color: $white-color;
+}
 
 // layout
 .layout {
@@ -212,6 +218,7 @@
     padding-bottom: 4rem;
   }
   &__color {
+    padding: 1px 3px;
     border-radius: 2px;
     background-color: #3b79c3;
     color: $white-color;
